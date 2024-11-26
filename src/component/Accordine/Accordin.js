@@ -66,3 +66,54 @@ export default function Accordian() {
     </div>
   );
 }
+
+// Multiple selection with out button
+
+
+// import React, { useState } from "react";
+// import data from "./data";
+
+// function Accordine() {
+//   const [selectedItems, setSelectedItems] = useState([]);
+
+//   function handleSelect(id) {
+//     if (selectedItems.includes(id)) {
+//       // If already selected, remove it
+//       setSelectedItems(selectedItems.filter((item) => item !== id));
+//     } else {
+//       // Otherwise, add it
+//       setSelectedItems([...selectedItems, id]);
+//     }
+//   }
+
+//   return (
+//     <>
+//       <div className="wrapper">
+//         <div className="accordin">
+//           {data && data.length > 0 ? (
+//             data.map((item, index) => (
+//               <div key={index}>
+//                 <div
+//                   onClick={() => handleSelect(item.id)}
+//                   className="accordin-title"
+//                 >
+//                   <h3>{item.question}</h3>
+//                   <span>{selectedItems.includes(item.id) ? "-" : "+"}</span>
+//                 </div>
+//                 {selectedItems.includes(item.id) && (
+//                   <div className="accordin-content">
+//                     <p>{item.answer}</p>
+//                   </div>
+//                 )}
+//               </div>
+//             ))
+//           ) : (
+//             <p>No data available</p>
+//           )}
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+// export default Accordine;
